@@ -1,0 +1,10 @@
+'use strict';
+
+module.exports = {
+  env: 'production',
+  https: false,
+  port: process.env.PORT || 2000,
+  mongo: {
+    uri: 'mongodb://' + process.env.PLANMONGODB_PORT_27017_TCP_ADDR + '/planserv'
+  }
+};
